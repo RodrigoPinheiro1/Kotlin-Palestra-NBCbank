@@ -1,14 +1,15 @@
 package model;
 
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import org.intellij.lang.annotations.Pattern;
+import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Data
+@Getter
+@Setter
+@ToString
+@EqualsAndHashCode
 @NoArgsConstructor
 public class Usuario {
 
@@ -27,5 +28,10 @@ public class Usuario {
         this.nome = nome;
         this.dataNascimento = dataNascimento;
         this.bancoUsuario = bancoUsuario;
+    }
+
+    public Integer somaUsuario(int i, int i2) {
+
+        return i + i2;
     }
 }

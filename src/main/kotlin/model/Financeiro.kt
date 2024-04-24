@@ -8,11 +8,9 @@ data class Financeiro( //data class traz metodos
     var saldoDebito: Double,
     var valorImprestimo: Double
 ) {
-
-    fun receberDebito(dinheiro: Double): Double {
-
+    //protected
+     fun  receberDebito(dinheiro: Double): Double {
         this.saldoDebito += dinheiro
-
         return this.saldoDebito
     }
 }
