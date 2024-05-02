@@ -15,12 +15,14 @@ public class main {
 
         Banco banco = new Banco(null, "123", "123", financeiro);
 
+
         /// tipo de listas
-        List<Banco> listBanco = new LinkedList<>();
+        List<Banco> listBanco = new ArrayList<>();
+        List<Banco> listBanco2 = new LinkedList<>(); //varios tipos no java
 
         listBanco.add(banco);
 
-        financeiro.receberDebito(123.00);
+        financeiro.receberDebito(123.00); //metodo kotlin no java, funcionando
 
         Usuario usuario = new Usuario(1L, "NOME", "dataNascimento", listBanco);
 
@@ -34,5 +36,5 @@ public class main {
         System.out.println(soma);
 
         System.out.println(usuario);
-    } // COPIAR CODIGO E PASSAR PARA KOTLIN
-}
+    }
+} // Copie esse codigo para outra main que esta em kotlin e vai funcionar

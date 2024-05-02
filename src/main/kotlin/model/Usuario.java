@@ -11,7 +11,7 @@ import java.util.List;
 @ToString
 @EqualsAndHashCode
 @NoArgsConstructor
-public class Usuario {
+public class Usuario { //classe java suja com muita verbosidade
 
     private Long id;
 
@@ -34,4 +34,6 @@ public class Usuario {
 
         return i + i2;
     }
+
+
 }

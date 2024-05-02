@@ -1,7 +1,7 @@
 package org.ia.model
 
 
-data class Financeiro( //data class traz metodos
+data class Financeiro( //data class traz metodos como geter, setter, hashcode,
 
     var id: Long? = null,
     var saldoCredito: Double,
